@@ -1,11 +1,15 @@
 dist: bionic
 language: python
 python:
-  - "3.7"
+- '3.7'
 before_install:
-  - export TZ=America/Chicago
-  - date
+- export TZ=America/Chicago
+- date
 install:
-  - pip install -r requirements.txt
+- pip install -r requirements.txt
 script:
-  - python3 time.py
+- python3 time.py
+deploy:
+  provder: pypi
+  user: "hobakill"
+
